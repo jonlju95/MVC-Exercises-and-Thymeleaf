@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+    <ul id="linkList">
+        <li><a href="index.html.html" th:href="@{index}">Index</a></li>
+        <li><a href="about.html" th:href="@{about}">About</a></li>
+        <li><a href="temperature.html" th:href="@{temperature}">Temperature</a></li>
+    </ul>
+    <form th:action="@{contact}" method="post">
+        <input type="text" id="name" name="name" placeholder="Enter a name">
+        <button type="submit">Send</button>
+    </form>
+    <ul th:if="${!names.isEmpty()}" id="nameList">
+        <li th:each="name: ${names}">
+            <p th:text="${name}"></p>
+        </li>
+    </ul>
+</body>
+</html>

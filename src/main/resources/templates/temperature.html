@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+    <ul id="linkList">
+        <li><a href="index.html" th:href="@{index}">Index</a></li>
+        <li><a href="contact.html" th:href="@{contact}">Contact</a></li>
+        <li><a href="about.html" th:href="@{about}">About</a></li>
+    </ul>
+    <form th:action="@{temperature}" method="get">
+        <input type="text" id="name" name="name" placeholder="Enter a temperature">
+        <button type="submit">Send</button>
+    </form>
+
+    <h1 th:text="${temp}"></h1>
+</body>
+</html>

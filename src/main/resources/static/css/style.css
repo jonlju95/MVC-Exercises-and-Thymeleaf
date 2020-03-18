@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: steelblue;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 15%;
+}
+
+#linkList {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #152837;
+}
+
+#linkList>li {
+    float: left;
+}
+
+#linkList>li:hover {
+    background-color: #070e12;
+}
+
+a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+input {
+    padding: 12px 20px;
+}
+
+button {
+    padding: 12px 20px;
+}
+
+#nameList {
+    margin-left: 45%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 30px;
+}

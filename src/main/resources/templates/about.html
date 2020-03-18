@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body>
+    <ul id="linkList">
+        <li><a href="index.html" th:href="@{index}">Index</a></li>
+        <li><a href="contact.html" th:href="@{contact}">Contact</a></li>
+        <li><a href="temperature.html" th:href="@{temperature}">Temperature</a></li>
+    </ul>
+    <img th:src="@{img/cat.png}" th:title="Mittens">
+</body>
+</html>
